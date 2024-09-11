@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule sua Equação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calcule sua Equação</h1>
+        <button onclick="window.location.href='index.html';">Voltar</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Monte sua Equação</h2>
+            <p>Insira números e operadores para montar sua equação. Use parênteses para definir a ordem das operações.</p>
+            
+            <!-- Display editável da equação -->
+            <input type="text" id="equationDisplay" value="" placeholder="Equação" />
+
+            <form id="equationForm" onsubmit="event.preventDefault();"> <!-- Prevenindo o envio -->
+                <div class="form-group">
+                    <label for="num">Número:</label>
+                    <input type="number" id="num" step="any">
+                </div>
+
+                <div class="form-group">
+                    <label for="operator">Operador:</label>
+                    <select id="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value=".">.</option> <!-- Mudança no símbolo de multiplicação -->
+                        <option value="/">/</option>
+                        <option value="(">(</option>
+                        <option value=")">)</option>
+                        <option value="x">x</option> <!-- Adicionando X -->
+                        <option value="y">y</option> <!-- Adicionando Y -->
+                        <option value="=">=</option> <!-- Adicionando igual -->
+                    </select>
+                </div>
+
+                <button type="button" onclick="calculate()">Calcular</button>
+                <button type="button" onclick="clearEquation()">Limpar</button>
+            </form>
+
+            <div id="result">
+                <h3>Resultado:</h3>
+                <p id="resultText"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvedores do site:</p>
+        <div id="socialLinks">
+            <a href="https://www.instagram.com/pdr._.z3nr/" target="_blank">Pedro Fabiano</a>
+            <a href="https://www.instagram.com/arthurxw77_maia/" target="_blank">Arthur Maia</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

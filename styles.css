@@ -1,0 +1,211 @@
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #28920e3a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("fundo3.jpg");
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+button {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+section {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Roboto;
+}
+
+#equationDisplay {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#resultText {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#socialLinks {
+    margin-top: 10px;
+}
+
+#socialLinks a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+#socialLinks a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries para responsividade */
+
+/* Tablets em paisagem e dispositivos móveis maiores */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    #equationDisplay {
+        font-size: 1.2em;
+    }
+
+    #result {
+        font-size: 1.2em;
+    }
+
+    #socialLinks a {
+        font-size: 1em;
+    }
+}
+
+/* Dispositivos móveis menores */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 6px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    #equationDisplay {
+        font-size: 1em;
+    }
+
+    #result {
+        font-size: 1em;
+    }
+
+    #socialLinks a {
+        font-size: 0.9em;
+    }
+}
